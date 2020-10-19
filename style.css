@@ -1,0 +1,23 @@
+/*
+Colors used:
+Primary Color (White): #ffffff;
+Secondary Color (Black): #202020;
+*/
+/* font-family: 'Sulphur Point', sans-serif;
+*/
+/* Layout styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white, #ffffff;
+  font-family: font-family: 'Sulphur Point', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.65; /* Sets the line-height to 1.65 * the font-size */
+  color: #202020;
+  text-align: center;
+}
