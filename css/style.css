@@ -2,6 +2,7 @@
 Colors used:
 Primary Color (White): #ffffff;
 Secondary Color (Black): #202020;
+Secondary Color (Black): #e4462e;
 */
 /* font-family: 'Poppins', sans-serif;
 */
@@ -43,7 +44,7 @@ img {
   width: 100%;
 }
 a {
-  color: #ffffff;
+  color: #202020;
   text-decoration: none; /* No underlining */
 }
 a:visited { /* visited link */
@@ -51,11 +52,11 @@ a:visited { /* visited link */
 }
 a:hover,
 a:focus {
-  color: #cc6540;
+  color: #E4462E;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
-  color: #081d3c;
+  color: #202020;
 }
 .button {
   display: inline-block;
