@@ -2,13 +2,27 @@
 Colors used:
 Primary Color (White): #ffffff;
 Secondary Color (Black): #202020;
-Secondary Color (Black): #e4462e;
+Secondary Color (Red): #e4462e;
+Secondary Color (Red, 70% opacity): #EC7D6C;
 */
 /* font-family: 'Poppins', sans-serif;
 */
 /* Layout styling */
 * {
   box-sizing: border-box;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#projects .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #202020;
 }
 
 body {
@@ -52,7 +66,7 @@ img {
 }
 
 a {
-  color: #202020;
+  color: #ffffff !important;
   text-decoration: none;
   /* No underlining */
 }
@@ -64,7 +78,7 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: #E4462E;
+  color: #EC7D6C !important;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
@@ -82,6 +96,12 @@ a:active {
 .my-link {
   /* class selector */
   color: blue;
+}
+
+header {
+  background-color: #202020;
+  color: #ffffff !important;
+  padding: 10px 15px;
 }
 
 .button {
