@@ -60,7 +60,7 @@ a {
 
 a:visited {
   /* visited link */
-  color: #202020;
+  color: #ffffff !important;
 }
 
 a:hover,
@@ -72,7 +72,7 @@ a:focus {
 
 a:active {
   /* selected link */
-  color: #202020;
+  color: #ffffff !important;
 }
 
 #my-link {
@@ -89,6 +89,15 @@ header {
   background-color: #202020;
   color: #ffffff !important;
   padding: 10px 15px;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(32, 32, 32, 0.3);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(32, 32, 32, 0.3);
+  box-shadow: 0px 10px 10px 0px rgba(32, 32, 32, 0.3);
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  padding-top: 133px;
 }
 
 .container {
@@ -104,15 +113,15 @@ header {
   border-bottom: 1px solid #202020;
 }
 
-#header-intro h1 {
+#hero h1 {
   text-align: center;
 }
 
-#header-intro h2 {
+#hero h2 {
   text-align: center;
 }
 
-#header-intro p {
+#hero p {
   text-align: center;
 }
 
@@ -146,6 +155,54 @@ header {
 
 .logo {
   max-width: 250px;
+}
+
+header {
+  background-color: #202020;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+nav>ul>li>a:visited. {
+  color: #ffffff !important;
+}
+
+nav>ul>li>a:hover. {
+  color: #EC7D6C !important;
+  text-decoration: underline;
+}
+
+nav>ul>li>a:active. {
+  color: #ffffff !important;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+#hero {
+  background-color: #ffffff;
+  color: #202020 !important;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
 
 .button {
