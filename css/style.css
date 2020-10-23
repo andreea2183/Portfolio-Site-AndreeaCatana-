@@ -12,19 +12,6 @@ Secondary Color (Red, 70% opacity): #EC7D6C;
   box-sizing: border-box;
 }
 
-.container {
-  padding: 0 15px;
-}
-
-.row {
-  margin: 25px 0;
-}
-
-#projects .row {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #202020;
-}
-
 body {
   background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
@@ -102,6 +89,63 @@ header {
   background-color: #202020;
   color: #ffffff !important;
   padding: 10px 15px;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#projects .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #202020;
+}
+
+#header-intro h1 {
+  text-align: center;
+}
+
+#header-intro h2 {
+  text-align: center;
+}
+
+#header-intro p {
+  text-align: center;
+}
+
+#projects h2 {
+  text-align: center;
+}
+
+#footer h2 {
+  text-align: center;
+}
+
+#footer p {
+  text-align: center;
+}
+
+#headertitle h1 {
+  text-align: center;
+}
+
+#AndreeaCatanaStory h2 {
+  text-align: center;
+}
+
+#AndreeaCatanaSkills h3 {
+  text-align: center;
+}
+
+#AndreeaCatanaTools h3 {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
 }
 
 .button {
