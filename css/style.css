@@ -1,14 +1,17 @@
-/*
-Colors used:
-Primary Color (White): #ffffff;
-Secondary Color (Black): #202020;
-Secondary Color (Red): #e4462e;
-Secondary Color (Red, 70% opacity): #EC7D6C;
+/* Colors used:
+      Background (White): #ffffff;
+      Background accent (Black): #202020;
+      Text (Black): #202020;
+      Accent 1 (Red): #e4462e;
+      Accent 2 (Red, 70% opacity): #EC7D6C;
+      Padding: top right bottom left;
 */
 /* font-family: 'Poppins', sans-serif;
 */
 /* Layout styling */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -24,7 +27,7 @@ body {
   color: #202020;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
   line-height: 1.4;
 }
 
@@ -40,11 +43,6 @@ h2 {
 
 h3 {
   font-size: 1.75em;
-  font-weight: 500;
-}
-
-h4 {
-  font-size: 1.35em;
   font-weight: 500;
 }
 
@@ -264,8 +262,13 @@ nav {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
