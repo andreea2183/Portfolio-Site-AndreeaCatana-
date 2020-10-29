@@ -46,10 +46,6 @@ h3 {
   font-weight: 500;
 }
 
-img {
-  width: 100%;
-}
-
 a {
   color: #ffffff !important;
   text-decoration: none;
@@ -83,10 +79,13 @@ a:active {
   color: blue;
 }
 
+/* Index page - Styling */
 header {
   background-color: #202020;
   color: #ffffff !important;
   padding: 10px 15px;
+  text-align: center;
+  padding: 10px 0;
   -webkit-box-shadow: 0px 10px 10px 0px rgba(32, 32, 32, 0.3);
   -moz-box-shadow: 0px 10px 10px 0px rgba(32, 32, 32, 0.3);
   box-shadow: 0px 10px 10px 0px rgba(32, 32, 32, 0.3);
@@ -94,25 +93,8 @@ header {
   width: 100%;
 }
 
-main {
-  padding-top: 133px;
-}
-
-.container {
-  padding: 0 15px;
-}
-
-.row {
-  margin: 25px 0;
-}
-
-#projects .row {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #202020;
-}
-
-#hero h1 {
-  text-align: center;
+.logo {
+  max-width: 250px;
 }
 
 #hero h2 {
@@ -121,92 +103,17 @@ main {
 
 #hero p {
   text-align: center;
+  padding-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-}
-
-#projects h2 {
-  text-align: center;
-}
-
-#footer h2 {
-  text-align: center;
-}
-
-#footer p {
-  text-align: center;
-}
-
-#footer {
-  text-align: center;
-}
-
-#headertitle h1 {
-  text-align: center;
-}
-
-#AndreeaCatanaStory h2 {
-  text-align: center;
-}
-
-#AndreeaCatanaSkills h3 {
-  text-align: left;
-}
-
-#AndreeaCatanaTools h3 {
-  text-align: left;
-}
-
-.logo {
-  max-width: 250px;
-}
-
-header {
-  background-color: #202020;
-  text-align: center;
-  padding: 10px 0;
-}
-
-nav>ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
-}
-
-nav>ul>li>a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 200;
-  color: #ffffff;
-}
-
-nav>ul>li>a:visited. {
-  color: #ffffff !important;
-}
-
-nav>ul>li>a:hover. {
-  color: #EC7D6C !important;
-  text-decoration: underline;
-}
-
-nav>ul>li>a:active. {
-  color: #ffffff !important;
-}
-
-nav {
-  display: inline-block;
-  width: 100%;
+  width: 90%;
 }
 
 #hero {
   background-color: #ffffff;
   color: #202020 !important;
-  padding: 20px 0;
-  display: inline-block;
+  padding-top: 133px;
+  padding-bottom: 10px;
   width: 100%;
 }
 
@@ -214,15 +121,83 @@ nav {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 90%;
 }
 
-.center {
+#main {
+  clear: both;
+  color: #202020;
+  text-align: left;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin: 0 auto;
+}
+
+#index-page {
+  padding: 0px 0px;
+}
+
+#main h2 {
+  text-align: center;
+}
+
+#main h3 {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+#main p {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+#main .container {
+  display: grid;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#main .row {
+  padding-top: 20px;
+  margin: 10px 0px;
+  text-align: stretch;
+}
+
+#main .col-left {
+  float: left;
+  text-align: left;
+  width: 50%;
+}
+
+#main .col-right {
+  float: right;
+  text-align: left;
+  width: 50%;
+}
+
+#main .img-responsive {
   display: block;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
-  padding-top: 40px;
+}
+
+#main .berlin-illustration {
+  height: 200px;
+  width: 100%;
+}
+
+#main .link {
+  color: #202020;
+}
+
+#main .link:hover {
+  color: #e4462e;
+}
+
+.row {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #202020;
 }
 
 @keyframes color-change {
@@ -275,6 +250,32 @@ nav {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+#footer {
+  float: bottom;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+#footer h2 {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+#footer p {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.footer-Copyright {
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  color: #202020;
+  padding-bottom: 10px;
+}
+
 .button {
   display: inline-block;
   background-color: #e4462e;
@@ -289,6 +290,102 @@ nav {
 .button:hover {
   opacity: 0.8;
   text-decoration: none;
+}
+/* About page - Styling */
+header {
+  background-color: #202020;
+  color: #ffffff !important;
+  padding: 10px 15px;
+  text-align: center;
+  padding: 10px 0;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(32, 32, 32, 0.3);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(32, 32, 32, 0.3);
+  box-shadow: 0px 10px 10px 0px rgba(32, 32, 32, 0.3);
+  position: fixed;
+  width: 100%;
+}
+
+#main {
+  clear: both;
+  color: #202020;
+  text-align: left;
+  padding-top: 99px;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin: 0;
+}
+
+#about-page {
+  padding-top: 99px;
+}
+
+#main .row {
+  margin: 0;
+}
+
+#main h2 {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#main h3 {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+#main p {
+  padding-bottom: 10px;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+.row {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #202020;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+}
+
+/* Nav bar styling */
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+nav>ul>li>a:visited. {
+  color: #ffffff !important;
+}
+
+nav>ul>li>a:hover. {
+  color: #EC7D6C !important;
+  text-decoration: underline;
+}
+
+nav>ul>li>a:active. {
+  color: #ffffff !important;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
 }
 
 .button.contact {
@@ -322,12 +419,13 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px;
-    height: 99px;
+    padding: 10px 5px;
+    height: 100px;
     display: block;
+    position: fixed;
   }
 
-  header-logo {
+  .logo {
     width: 40%;
     float: left;
     margin: 10px;
@@ -349,13 +447,19 @@ Medium devices (640px and larger)
     display: inline-block;
   }
 
+  .berlin-illustration {
+    height: 150px;
+    width: 100%;
+  }
+
   .col-md-6 {
     width: 50%;
+
   }
 
   [class*="col-"] {
     float: left;
-    padding: 20px;
+    padding: 10px;
   }
 
   .row::after {
@@ -364,8 +468,8 @@ Medium devices (640px and larger)
     display: table;
   }
 
-  #projects .row {
-    margin-top: 25px;
+  #main .row {
+    margin-top: 15px;
     margin-left: 5px;
     margin-right: 5px;
   }
@@ -376,8 +480,8 @@ Medium devices (640px and larger)
 
   .photo {
     display: block;
-    margin-right: auto;
-    width: 40%;
+
+    width: 100%;
   }
 }
 
@@ -385,6 +489,43 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  #header {
+     height: 100px;
+   }
+
+   #hero {
+     padding-top: 175px;
+
+   }
+
+   h2 {
+     font-size: 2.25em;
+     font-weight: 700;
+   }
+
+   h3 {
+     font-size: 1.75em;
+     font-weight: 500;
+   }
+
+   .logo {
+     width: 50%;
+     float: left;
+     margin: 20px;
+   }
+
+   nav {
+     display: inline-block;
+     margin-top: 20px;
+     padding-right: 20px;
+     font-size: 1.5em;
+   }
+
+   .berlin-illustration {
+     height: 200px;
+     width: 100%;
+   }
+
   .col-lg-7 {
     width: 40%;
   }
@@ -392,52 +533,18 @@ Large devices (1024px or larger)
   .col-lg-5 {
     width: 60%;
     padding-right: 30px;
-    padding-top: 50px;
+    padding-top: 30px;
   }
 
   .photo {
     display: block;
     margin-right: auto;
-    width: 30%;
+    width: 100%;
   }
 
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {}
-
-/* ==============================
-Extra-large devices (1920px or larger)
-================================= */
-@media only screen and (min-width: 1920px) {}
-
-@keyframes color-change {
-  from {
-    fill: #edc655;
-  }
-
-  to {
-    fill: #f76414;
-  }
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
   }
 }
