@@ -34,6 +34,7 @@ h1, h2, h3 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -97,7 +98,7 @@ header {
   max-width: 250px;
 }
 
-#hero h2 {
+#hero h1 {
   text-align: center;
 }
 
@@ -112,7 +113,7 @@ header {
 #hero {
   background-color: #ffffff;
   color: #202020 !important;
-  padding-top: 133px;
+  padding-top: 30px;
   padding-bottom: 10px;
   width: 100%;
 }
@@ -161,6 +162,10 @@ header {
   padding-top: 20px;
   margin: 10px 0px;
   text-align: stretch;
+}
+
+#my_work {
+  padding-bottom: 0px;
 }
 
 #main .col-left {
@@ -291,6 +296,7 @@ header {
   opacity: 0.8;
   text-decoration: none;
 }
+
 /* About page - Styling */
 header {
   background-color: #202020;
@@ -309,24 +315,21 @@ header {
   clear: both;
   color: #202020;
   text-align: left;
-  padding-top: 99px;
+  padding-top: 100px;
   padding-right: 5%;
   padding-left: 5%;
   margin: 0;
-}
-
-#about-page {
-  padding-top: 99px;
 }
 
 #main .row {
   margin: 0;
 }
 
-#main h2 {
-  text-align: center;
+#main h1 {
+  text-align: left;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+
 }
 
 #main h3 {
@@ -420,9 +423,19 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 10px 5px;
-    height: 100px;
+    height: 102px;
     display: block;
     position: fixed;
+  }
+
+  h1 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    font-weight: 500;
   }
 
   .logo {
@@ -448,7 +461,7 @@ Medium devices (640px and larger)
   }
 
   .berlin-illustration {
-    height: 150px;
+    height: 340,41px;
     width: 100%;
   }
 
@@ -469,7 +482,7 @@ Medium devices (640px and larger)
   }
 
   #main .row {
-    margin-top: 15px;
+    margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
   }
@@ -489,51 +502,131 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  #header {
-     height: 100px;
-   }
+  header {
+    text-align: unset;
+    padding: 10px 5px;
+    height: 102px;
+    display: block;
+    position: fixed;
+  }
 
-   #hero {
-     padding-top: 175px;
+  h1 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
 
-   }
+  h2 {
+    font-size: 1.75em;
+    font-weight: 500;
+  }
 
-   h2 {
-     font-size: 2.25em;
-     font-weight: 700;
-   }
+  .logo {
+    width: 50%;
+    float: left;
+    margin: 10px;
+  }
 
-   h3 {
-     font-size: 1.75em;
-     font-weight: 500;
-   }
-
-   .logo {
-     width: 50%;
-     float: left;
-     margin: 20px;
-   }
-
-   nav {
-     display: inline-block;
-     margin-top: 20px;
-     padding-right: 20px;
-     font-size: 1.5em;
-   }
+  nav {
+    width: 50%;
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 1em;
+  }
 
    .berlin-illustration {
-     height: 200px;
+     height: 364,64px;
      width: 100%;
    }
 
-  .col-lg-7 {
-    width: 40%;
+   .col-lg-7 {
+    width: 50%;
   }
 
   .col-lg-5 {
-    width: 60%;
-    padding-right: 30px;
-    padding-top: 30px;
+    width: 50%;
+
+    padding-top: 50px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .photo {
+    display: block;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+/* X-large devices (1440px or larger) - Desktop Styles */
+@media only screen and (min-width: 1440px) {
+  header {
+    text-align: unset;
+    padding: 10px 5px;
+    height: 102px;
+    display: block;
+    position: fixed;
+  }
+
+  h1 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    font-weight: 500;
+  }
+
+  #hero h1 {
+    text-align: center
+  }
+
+  #hero p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+  }
+
+  #hero {
+    background-color: #ffffff;
+    color: #202020 !important
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%
+  }
+
+  #hero span {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+  }
+
+  .logo {
+    display: block;
+    width: 50%;
+    float: left;
+
+  }
+
+  nav {
+    display: inline-block;
+    width: 50%;
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+
+  }
+
+  .berlin-illustration {
+    width: 623px;
+    width: 100%;
   }
 
   .photo {
@@ -542,9 +635,9 @@ Large devices (1024px or larger)
     width: 100%;
   }
 
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+  #main .container {
+    display: grid;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
