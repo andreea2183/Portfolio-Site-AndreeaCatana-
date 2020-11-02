@@ -315,7 +315,7 @@ header {
   clear: both;
   color: #202020;
   text-align: left;
-  padding-top: 100px;
+  padding-top: 70px;
   padding-right: 5%;
   padding-left: 5%;
   margin: 0;
@@ -329,7 +329,16 @@ header {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 10px;
+}
 
+#projects h1 {
+  text-align: left;
+  padding-bottom: 0px;
+}
+
+#main h2 {
+  text-align: center;
+  padding-top: 15px;
 }
 
 #main h3 {
@@ -339,6 +348,10 @@ header {
 
 #main p {
   padding-bottom: 10px;
+}
+
+#projects p {
+  padding-top: 0px;
 }
 
 .logo {
@@ -461,7 +474,7 @@ Medium devices (640px and larger)
   }
 
   .berlin-illustration {
-    height: 340,41px;
+    height: 400px;
     width: 100%;
   }
 
@@ -485,6 +498,10 @@ Medium devices (640px and larger)
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
+  }
+
+  #main h3 {
+    padding-top: 0px;
   }
 
   #about-page h3 {
@@ -535,7 +552,7 @@ Large devices (1024px or larger)
   }
 
    .berlin-illustration {
-     height: 364,64px;
+     height: 435,81px;
      width: 100%;
    }
 
@@ -625,7 +642,7 @@ Large devices (1024px or larger)
   }
 
   .berlin-illustration {
-    width: 623px;
+    height: 616,25px;
     width: 100%;
   }
 
