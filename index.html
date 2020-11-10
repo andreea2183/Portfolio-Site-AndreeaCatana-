@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/921437f5f8.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -21,24 +22,24 @@
   <header id="header">
     <!-- For the navigation -->
     <div class="container">
-      <img class="logo" id="header-logo" src="./img/Logo%20200x50 white.svg" alt="Andreea Catana UX/UI Designer">
-      <nav>
-        <ul>
-          <li><a class="menu-link" href="index.html">Work</a></li>
-          <li><a class="menu-link" href="about.html">About</a></li>
-          <li><a class="menu-link" href="files/Andreea_Catana_Resume.pdf">Resume</a></li>
-          <li><a class="menu-link" href="#footer">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <img class="logo" id="header-logo" src="./img/Logo%20200x50 white.svg" alt="Andreea Catana UX/UI logo">
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="files/Andreea_Catana_Resume.pdf">Resume</a></li>
+            <li><a onclick="menuToggle()" href="#footer">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
 
-
-
   <!-- For your work/projects -->
   <main>
-
     <div id="main">
       <!-- For the hero section -->
       <div id="hero">
@@ -50,7 +51,7 @@
       </div>
       <div id="my_work">
         <h2>My work</h2>
-        <div />
+      </div>
         <div class="container">
           <div class="row">
             <div class="column col-md-6 col-lg-7" id="TheTrust1Img">
@@ -65,7 +66,6 @@
               <a href="thetrust.html" class="button">view project</a>
             </div>
           </div>
-
 
 
           <div class="row">
@@ -1102,7 +1102,6 @@
               <p>This is an example of a SVG image which is animated using keyframes.</p>
             </div>
           </div>
-
         </div>
       </div>
   </main>

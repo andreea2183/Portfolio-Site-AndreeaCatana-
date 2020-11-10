@@ -84,9 +84,7 @@ a:active {
 header {
   background-color: #202020;
   color: #ffffff !important;
-  padding: 10px 15px;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 10px;
   -webkit-box-shadow: 0px 10px 10px 0px rgba(32, 32, 32, 0.3);
   -moz-box-shadow: 0px 10px 10px 0px rgba(32, 32, 32, 0.3);
   box-shadow: 0px 10px 10px 0px rgba(32, 32, 32, 0.3);
@@ -95,7 +93,7 @@ header {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 #hero h1 {
@@ -107,7 +105,7 @@ header {
   padding-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 100%;
 }
 
 #hero {
@@ -122,7 +120,7 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 100%;
 }
 
 #main {
@@ -132,10 +130,6 @@ header {
   padding-right: 5%;
   padding-left: 5%;
   margin: 0 auto;
-}
-
-#index-page {
-  padding: 0px 0px;
 }
 
 #main h2 {
@@ -301,9 +295,7 @@ header {
 header {
   background-color: #202020;
   color: #ffffff !important;
-  padding: 10px 15px;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0px 4px;
   -webkit-box-shadow: 0px 10px 10px 0px rgba(32, 32, 32, 0.3);
   -moz-box-shadow: 0px 10px 10px 0px rgba(32, 32, 32, 0.3);
   box-shadow: 0px 10px 10px 0px rgba(32, 32, 32, 0.3);
@@ -315,7 +307,7 @@ header {
   clear: both;
   color: #202020;
   text-align: left;
-  padding-top: 70px;
+  padding-top: 20px;
   padding-right: 5%;
   padding-left: 5%;
   margin: 0;
@@ -355,7 +347,7 @@ header {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 .row {
@@ -375,8 +367,37 @@ nav>ul {
   margin: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.logo {
+  padding-left: 10px;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(228,70,46,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 nav>ul>li>a {
@@ -397,11 +418,6 @@ nav>ul>li>a:hover. {
 
 nav>ul>li>a:active. {
   color: #ffffff !important;
-}
-
-nav {
-  display: inline-block;
-  width: 100%;
 }
 
 .button.contact {
@@ -435,8 +451,8 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 10px 5px;
-    height: 102px;
+
+    height: 56px;
     display: block;
     position: fixed;
   }
@@ -452,26 +468,34 @@ Medium devices (640px and larger)
   }
 
   .logo {
-    width: 40%;
+    min-width: 170px;
     float: left;
-    margin: 10px;
+
   }
 
   nav {
     width: 50%;
     float: right;
     text-align: right;
-    margin-top: 10px;
-    font-size: 1em;
+
+    font-size: 0,55em;
   }
 
   nav>ul {
-    margin: 1em 0;
+    margin: 0.50em 0;
   }
 
   nav>ul>li {
     display: inline-block;
   }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
 
   .berlin-illustration {
     height: 400px;
@@ -519,8 +543,8 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
   header {
     text-align: unset;
-    padding: 10px 5px;
-    height: 102px;
+
+    height: 56px;
     display: block;
     position: fixed;
   }
@@ -536,17 +560,17 @@ Large devices (1024px or larger)
   }
 
   .logo {
-    width: 50%;
+    min-width: 170px;
     float: left;
-    margin: 10px;
+
   }
 
   nav {
     width: 50%;
     float: right;
     text-align: right;
-    margin-top: 10px;
-    font-size: 1em;
+
+    font-size: 0,65em;
   }
 
   .berlin-illustration {
@@ -580,8 +604,8 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1440px) {
   header {
     text-align: unset;
-    padding: 10px 5px;
-    height: 102px;
+
+    height: 56px;
     display: block;
     position: fixed;
   }
@@ -623,7 +647,7 @@ Large devices (1024px or larger)
 
   .logo {
     display: block;
-    width: 50%;
+    min-width: 170px;
     float: left;
   }
 
@@ -632,7 +656,7 @@ Large devices (1024px or larger)
     width: 50%;
     float: right;
     text-align: right;
-    margin-top: 10px;
+
   }
 
   .berlin-illustration {

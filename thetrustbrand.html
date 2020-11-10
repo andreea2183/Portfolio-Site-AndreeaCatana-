@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/921437f5f8.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -21,15 +22,18 @@
   <header id="header">
     <!-- For the navigation -->
     <div class="container">
-      <img class="logo" id="header-logo" src="./img/Logo%20200x50 white.svg" alt="Andreea Catana UX/UI Designer">
-      <nav>
-        <ul>
-          <li><a class="menu-link" href="index.html">Work</a></li>
-          <li><a class="menu-link" href="about.html">About</a></li>
-          <li><a class="menu-link" href="files/Andreea_Catana_Resume.pdf">Resume</a></li>
-          <li><a class="menu-link" href="#footer">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <img class="logo" id="header-logo" src="./img/Logo%20200x50 white.svg" alt="Andreea Catana UX/UI logo">
+        <nav>
+          <ul>
+            <li><a class="menu-link" href="index.html">Work</a></li>
+            <li><a class="menu-link" href="about.html">About</a></li>
+            <li><a class="menu-link" href="files/Andreea_Catana_Resume.pdf">Resume</a></li>
+            <li><a class="menu-link" href="#footer">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -37,64 +41,65 @@
   <main>
     <div id="main">
       <div class="container">
-      <div class="row" id="projects">
-        <h1>The Trust</h1>
-        <p>In these pages you’ll find detailed information on the correct and incorrect usage of logos, colors, tone, voice and more. Feel free to use appropriately.</p>
-        <div id="TheTrustImg1">
-          <picture>
-            <source srcset="img/thetrust2/600/First page@3x.jpg" media="(max-width:767px)">
-            <img src="img/thetrust2/1200/First page@3x.jpg" alt="TheTrust2" class="img-responsive">
-          </picture>
-          <div id="TheTrustImg2">
+        <div class="row" id="projects">
+          <h1>The Trust</h1>
+          <p>In these pages you’ll find detailed information on the correct and incorrect usage of logos, colors, tone, voice and more. Feel free to use appropriately.</p>
+          <div id="TheTrustImg1">
             <picture>
-              <source srcset="img/thetrust2/600/Title@3x.jpg" media="(max-width:767px)">
-              <img src="img/thetrust2/1200/Title@3x.jpg" alt="TheTrust2" class="img-responsive">
+              <source srcset="img/thetrust2/600/First page@3x.jpg" media="(max-width:767px)">
+              <img src="img/thetrust2/1200/First page@3x.jpg" alt="TheTrust2" class="img-responsive">
             </picture>
-            <div id="TheTrustImg3">
+            <div id="TheTrustImg2">
               <picture>
-                <source srcset="img/thetrust2/600/Guiding principles@3x.jpg" media="(max-width:767px)">
-                <img src="img/thetrust2/1200/Guiding principles@3x.jpg" alt="TheTrust2" class="img-responsive">
+                <source srcset="img/thetrust2/600/Title@3x.jpg" media="(max-width:767px)">
+                <img src="img/thetrust2/1200/Title@3x.jpg" alt="TheTrust2" class="img-responsive">
               </picture>
-              <div id="TheTrustImg4">
+              <div id="TheTrustImg3">
                 <picture>
-                  <source srcset="img/thetrust2/600/Our logo@3x.jpg" media="(max-width:767px)">
-                  <img src="img/thetrust2/1200/Our logo@3x.jpg" alt="TheTrust2" class="img-responsive">
+                  <source srcset="img/thetrust2/600/Guiding principles@3x.jpg" media="(max-width:767px)">
+                  <img src="img/thetrust2/1200/Guiding principles@3x.jpg" alt="TheTrust2" class="img-responsive">
                 </picture>
-                <div id="TheTrustImg5">
+                <div id="TheTrustImg4">
                   <picture>
-                    <source srcset="img/thetrust2/600/Secondary logo@3x.jpg" media="(max-width:767px)">
-                    <img src="img/thetrust2/1200/Secondary logo@3x.jpg" alt="TheTrust2" class="img-responsive">
+                    <source srcset="img/thetrust2/600/Our logo@3x.jpg" media="(max-width:767px)">
+                    <img src="img/thetrust2/1200/Our logo@3x.jpg" alt="TheTrust2" class="img-responsive">
                   </picture>
-                  <div id="TheTrustImg6">
+                  <div id="TheTrustImg5">
                     <picture>
-                      <source srcset="img/thetrust2/600/The markue@3x.jpg" media="(max-width:767px)">
-                      <img src="img/thetrust2/1200/The markue@3x.jpg" alt="TheTrust2" class="img-responsive">
+                      <source srcset="img/thetrust2/600/Secondary logo@3x.jpg" media="(max-width:767px)">
+                      <img src="img/thetrust2/1200/Secondary logo@3x.jpg" alt="TheTrust2" class="img-responsive">
                     </picture>
-                    <div id="TheTrustImg7">
+                    <div id="TheTrustImg6">
                       <picture>
-                        <source srcset="img/thetrust2/600/Logo isolation@3x.jpg" media="(max-width:767px)">
-                        <img src="img/thetrust2/1200/Logo isolation@3x.jpg" alt="TheTrust2" class="img-responsive">
+                        <source srcset="img/thetrust2/600/The markue@3x.jpg" media="(max-width:767px)">
+                        <img src="img/thetrust2/1200/The markue@3x.jpg" alt="TheTrust2" class="img-responsive">
                       </picture>
-                      <div id="TheTrustImg8">
+                      <div id="TheTrustImg7">
                         <picture>
-                          <source srcset="img/thetrust2/600/Our color palette@3x.jpg" media="(max-width:767px)">
-                          <img src="img/thetrust2/1200/Our color palette@3x.jpg" alt="TheTrust2" class="img-responsive">
+                          <source srcset="img/thetrust2/600/Logo isolation@3x.jpg" media="(max-width:767px)">
+                          <img src="img/thetrust2/1200/Logo isolation@3x.jpg" alt="TheTrust2" class="img-responsive">
                         </picture>
-                        <div id="TheTrustImg9">
+                        <div id="TheTrustImg8">
                           <picture>
-                            <source srcset="img/thetrust2/600/Secondary colors@3x.jpg" media="(max-width:767px)">
-                            <img src="img/thetrust2/1200/Secondary colors@3x.jpg" alt="TheTrust2" class="img-responsive">
+                            <source srcset="img/thetrust2/600/Our color palette@3x.jpg" media="(max-width:767px)">
+                            <img src="img/thetrust2/1200/Our color palette@3x.jpg" alt="TheTrust2" class="img-responsive">
                           </picture>
-                          <div id="TheTrustImg10">
+                          <div id="TheTrustImg9">
                             <picture>
-                              <source srcset="img/thetrust2/600/Our family of fonts@3x.jpg" media="(max-width:767px)">
-                              <img src="img/thetrust2/1200/Our family of fonts@3x.jpg" alt="TheTrust2" class="img-responsive">
+                              <source srcset="img/thetrust2/600/Secondary colors@3x.jpg" media="(max-width:767px)">
+                              <img src="img/thetrust2/1200/Secondary colors@3x.jpg" alt="TheTrust2" class="img-responsive">
                             </picture>
-                            <div id="TheTrustImg11">
+                            <div id="TheTrustImg10">
                               <picture>
-                                <source srcset="img/thetrust2/600/Writing for your brand@3x.jpg" media="(max-width:767px)">
-                                <img src="img/thetrust2/1200/Writing for your brand@3x.jpg" alt="TheTrust2" class="img-responsive">
+                                <source srcset="img/thetrust2/600/Our family of fonts@3x.jpg" media="(max-width:767px)">
+                                <img src="img/thetrust2/1200/Our family of fonts@3x.jpg" alt="TheTrust2" class="img-responsive">
                               </picture>
+                              <div id="TheTrustImg11">
+                                <picture>
+                                  <source srcset="img/thetrust2/600/Writing for your brand@3x.jpg" media="(max-width:767px)">
+                                  <img src="img/thetrust2/1200/Writing for your brand@3x.jpg" alt="TheTrust2" class="img-responsive">
+                                </picture>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -107,7 +112,6 @@
           </div>
         </div>
       </div>
-    </div>
     </div>
   </main>
 
@@ -134,8 +138,8 @@
             </svg>
           </a>
           <div class="footer-Copyright">
-          <p>Copyright Andreea Catana 2020</p>
-        </div>
+            <p>Copyright Andreea Catana 2020</p>
+          </div>
         </div>
       </div>
     </div>

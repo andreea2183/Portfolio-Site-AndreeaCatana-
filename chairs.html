@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/921437f5f8.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -21,15 +22,18 @@
   <header id="header">
     <!-- For the navigation -->
     <div class="container">
-      <img class="logo" id="header-logo" src="./img/Logo%20200x50 white.svg" alt="Andreea Catana UX/UI Designer">
-      <nav>
-        <ul>
-          <li><a class="menu-link" href="index.html">Work</a></li>
-          <li><a class="menu-link" href="about.html">About</a></li>
-          <li><a class="menu-link" href="files/Andreea_Catana_Resume.pdf">Resume</a></li>
-          <li><a class="menu-link" href="#footer">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <img class="logo" id="header-logo" src="./img/Logo%20200x50 white.svg" alt="Andreea Catana UX/UI logo">
+        <nav>
+          <ul>
+            <li><a class="menu-link" href="index.html">Work</a></li>
+            <li><a class="menu-link" href="about.html">About</a></li>
+            <li><a class="menu-link" href="files/Andreea_Catana_Resume.pdf">Resume</a></li>
+            <li><a class="menu-link" href="#footer">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -37,17 +41,17 @@
   <main>
     <div id="main">
       <div class="container">
-      <div class="row" id="projects">
-        <h1>Chair's</h1>
-        <p>Chair's objective is to improve user's experience when buying furniture and also to promote local brands while giving users what they want when they need it.</p>
-        <div>
-          <picture>
-            <source srcset="img/chairs/Chairs presentation 600@3x.jpg" media="(max-width:767px)">
-            <img src="img/chairs/Chairs presentation 1200@3x.jpg" alt="Chairs" class="img-responsive">
-          </picture>
+        <div class="row" id="projects">
+          <h1>Chair's</h1>
+          <p>Chair's objective is to improve user's experience when buying furniture and also to promote local brands while giving users what they want when they need it.</p>
+          <div>
+            <picture>
+              <source srcset="img/chairs/Chairs presentation 600@3x.jpg" media="(max-width:767px)">
+              <img src="img/chairs/Chairs presentation 1200@3x.jpg" alt="Chairs" class="img-responsive">
+            </picture>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </main>
 
@@ -74,8 +78,8 @@
             </svg>
           </a>
           <div class="footer-Copyright">
-          <p>Copyright Andreea Catana 2020</p>
-        </div>
+            <p>Copyright Andreea Catana 2020</p>
+          </div>
         </div>
       </div>
     </div>
