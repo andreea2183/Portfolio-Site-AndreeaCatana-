@@ -96,6 +96,7 @@ header {
 
 #hero h1 {
   text-align: center;
+  width: 100%;
 }
 
 #hero p {
@@ -103,23 +104,17 @@ header {
   padding-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 90%;
 }
 
-#hero {
-  background-color: #ffffff;
-  color: #202020 !important;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  width: 100%;
-}
+
 
 #hero span {
   display: block;
   margin-left: auto;
   margin-right: auto;
   font-weight: 500;
-  width: 100%;
+  width: 90%;
 }
 
 #main {
@@ -130,6 +125,25 @@ header {
   padding-left: 5%;
   margin: 0 auto;
 }
+
+#hero {
+  background-color: #FEF9F8;
+  padding-right: 0px;
+  padding-left: 0px;
+  color: #202020 !important;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  width: 100%;
+
+}
+
+
+#main .hero {
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0 0;
+}
+
 
 #main h2 {
   text-align: center;
@@ -290,6 +304,9 @@ header {
   text-decoration: none;
 }
 
+
+
+
 /* About page - Styling */
 header {
   background-color: #202020;
@@ -307,10 +324,6 @@ header {
   padding-top: 30px;
   padding-right: 5%;
   padding-left: 5%;
-  margin: 0;
-}
-
-#main .row {
   margin: 0;
 }
 
@@ -356,6 +369,13 @@ header {
   display: block;
   width: 100%;
 }
+
+.skills_and_tools {
+margin-left: 30px;
+}
+
+
+
 
 /* Nav bar styling */
 nav>ul {
@@ -429,6 +449,16 @@ nav>ul>li>a:active. {
   background-color: #e4462e;
   color: #ffffff !important;
 }
+
+#about-page .skills_and_tools {
+  margin-left: 20px;
+}
+
+#about-page .col-md-6 {
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
 
 /* (320px and larger) - iPhone 5/SE */
 @media only screen and (min-width: 320px) {
@@ -504,9 +534,18 @@ Medium devices (640px and larger)
     width: 50%;
   }
 
+  .col-md-6 {
+    margin-left: 0px;
+  }
+
   [class*="col-"] {
     float: left;
     padding: 10px;
+  }
+
+  .skills_and_tools [class*="col-"] {
+    float: left;
+    padding: 30px;
   }
 
   .row::after {
@@ -532,6 +571,15 @@ Medium devices (640px and larger)
   .photo {
     display: block;
     width: 100%;
+  }
+
+  #about-page .skills_and_tools {
+    margin-left: 20px;
+  }
+
+  #about-page .col-md-6 {
+    margin-left: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -626,11 +674,11 @@ Large devices (1024px or larger)
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 60%
+    width: 70%
   }
 
   #hero {
-    background-color: #ffffff;
+    background-color: #FEF9F8;
     color: #202020 !important padding: 20px 0;
     display: inline-block;
     width: 100%
@@ -640,7 +688,7 @@ Large devices (1024px or larger)
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%
+    width: 70%
   }
 
   .logo {
@@ -668,9 +716,19 @@ Large devices (1024px or larger)
     width: 100%;
   }
 
+  .col-lg-7 {
+    width: 50%;
+  }
+
+  .col-lg-5 {
+    width: 50%;
+  }
+
   #main .container {
     display: grid;
-    max-width: 1440px;
+    max-width: 900px;
     margin: 0 auto;
   }
+
+
 }

@@ -26,10 +26,10 @@
         <img class="logo" id="header-logo" src="./img/Logo%20200x50 white.svg" alt="Andreea Catana UX/UI logo">
         <nav>
           <ul>
-            <li><a class="menu-link" href="index.html">Work</a></li>
-            <li><a class="menu-link" href="about.html">About</a></li>
-            <li><a class="menu-link" href="files/Andreea_Catana_Resume.pdf">Resume</a></li>
-            <li><a class="menu-link" href="#footer">Contact</a></li>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="files/Andreea_Catana_Resume.pdf">Resume</a></li>
+            <li><a onclick="menuToggle()" href="#footer">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
@@ -44,8 +44,8 @@
         <h1>About me</h1>
         <div class="photo">
           <picture>
-            <source srcset="img/acatana/ac_600.jpg" media="(max-width:767px)">
-            <img src="img/acatana/ac_1200.jpg" alt="My Photo" class="img-responsive">
+            <source srcset="img/acatana/ac_600@3x.jpg" media="(max-width:767px)">
+            <img src="img/acatana/ac_1200@3x.jpg" alt="My Photo" class="img-responsive">
           </picture>
         </div>
         <div>
@@ -64,9 +64,12 @@
       </div>
       <div>
         <h2>Skills & Tools</h2>
-      </div>
+</div>
+
       <div class="row">
+        <div class="skills_and_tools">
         <div class="col-md-6">
+
           <h3>Relevant Skills</h3>
           <ul>
             <li>Pixel-perfect design</li>
@@ -90,7 +93,10 @@
           </ul>
         </div>
       </div>
+
     </div>
+    </div>
+
 
   </main>
 
