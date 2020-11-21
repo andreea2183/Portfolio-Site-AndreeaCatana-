@@ -91,28 +91,37 @@ header {
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 180px;
 }
 
 #hero h1 {
   text-align: center;
+  font-weight: 700;
   width: 100%;
+  padding-top: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 1.75em;
 }
 
 #hero p {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 5px;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
 }
 
 #hero span {
   display: block;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-weight: 500;
-  width: 90%;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #main {
@@ -148,6 +157,8 @@ header {
 #main h3 {
   padding-top: 10px;
   padding-bottom: 5px;
+  font-weight: 600;
+  font-size: 1.5em;
 }
 
 #main p {
@@ -162,7 +173,6 @@ header {
 }
 
 #main .row {
-  padding-top: 20px;
   margin: 10px 0;
   font-stretch: normal;
 }
@@ -205,7 +215,7 @@ header {
 
 .row {
   padding-bottom: 20px;
-  border-bottom: 1px solid #202020;
+  border-bottom: 1px solid #8f8f8f;
 }
 
 @keyframes color-change {
@@ -265,14 +275,15 @@ header {
 
 #footer p {
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #footer {
   clear: both;
   float: bottom;
   width: 100%;
-  background-color: white;
+  background-color: #fef9f8;
   color: #202020;
   text-align: center;
   padding-top: 5%;
@@ -291,7 +302,7 @@ header {
   margin: 20px;
   display: inline-block;
   font-size: 20px;
-  padding: 20px;
+  padding: 10px;
   color: #de361d;
   border: 5px solid #de361d;
   border-radius: 50%;
@@ -331,10 +342,11 @@ header {
 
 .footer-Copyright {
   text-align: center;
+  font-size: 10px;
   width: 100%;
-  background-color: white;
+  background-color: #fef9f8;
   color: #202020;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .button {
@@ -357,13 +369,15 @@ header {
 /* About page - Styling */
 
 #main {
-  padding-top: 30px;
+  padding-top: 60px;
 }
 
 #main h1 {
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-size: 1.75em;
 }
 
 #projects h1 {
@@ -372,25 +386,62 @@ header {
 }
 
 #main h2 {
-  padding-top: 15px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 1.5em;
 }
 
 #main h3 {
-  padding-top: 15px;
   padding-bottom: 10px;
+}
+
+#main p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 #projects p {
   padding-top: 0;
+  width: 100%;
 }
 
 .photo {
   display: block;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 80%;
 }
 
 .skills_and_tools {
   margin-left: 30px;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #de361d !important;
+  text-transform: uppercase;
+  border: 2px solid #de361d;
+}
+
+.button.contact:hover {
+  background-color: #de361d;
+  color: #fff !important;
+}
+
+.centertext {
+  padding-top: 0;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.noliststyle {
+  list-style-type: none;
 }
 
 /* Nav bar styling */
@@ -509,6 +560,19 @@ Medium devices (640px and larger)
     font-weight: 500;
   }
 
+  #hero h1 {
+    text-align: center;
+    font-weight: 700;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 2.25em;
+  }
+
+  #hero p {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
   .logo {
     min-width: 170px;
     float: left;
@@ -554,6 +618,16 @@ Medium devices (640px and larger)
     padding: 10px;
   }
 
+  .col-lg-7 {
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .col-lg-5 {
+    padding-right: 0;
+    text-align: left;
+  }
+
   .skills_and_tools [class*="col-"] {
     float: left;
     padding: 30px;
@@ -581,6 +655,10 @@ Medium devices (640px and larger)
 
   .photo {
     display: block;
+    width: 70%;
+  }
+
+  .centertext {
     width: 100%;
   }
 
@@ -605,14 +683,35 @@ Large devices (1024px or larger)
     position: fixed;
   }
 
-  h1 {
-    font-size: 2.25em;
+  #hero h1 {
+    text-align: center;
     font-weight: 700;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 2.5em;
   }
 
-  h2 {
-    font-size: 1.75em;
-    font-weight: 500;
+  #hero p {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  #main h1 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-size: 2.5em;
+  }
+
+  #projects h1 {
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  #main h2 {
+    font-weight: 700;
+    font-size: 2em;
   }
 
   .logo {
@@ -636,7 +735,7 @@ Large devices (1024px or larger)
 
   .col-lg-5 {
     width: 50%;
-    padding-top: 50px;
+    padding-top: 20px;
   }
 
   .container {
@@ -648,7 +747,11 @@ Large devices (1024px or larger)
   .photo {
     display: block;
     margin-right: auto;
-    width: 100%;
+    width: 70%;
+  }
+
+  .centertext {
+    width: 80%;
   }
 }
 
@@ -661,50 +764,51 @@ Large devices (1024px or larger)
     position: fixed;
   }
 
-  h1 {
-    font-size: 2.25em;
-    font-weight: 700;
-  }
-
-  h2 {
-    font-size: 1.75em;
-    font-weight: 500;
-  }
-
   #hero h1 {
     text-align: center;
+    font-weight: 700;
+    padding-left: 160px;
+    padding-right: 160px;
+    font-size: 3em;
   }
 
   #hero p {
+    padding-left: 280px;
+    padding-right: 280px;
+  }
+
+  #main h1 {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-size: 2.5em;
   }
 
-  #hero {
-    background-color: #fef9f8;
-    color: #202020 !important;
-    padding: 20px 0;
-    display: inline-block;
-    width: 100%;
+  #projects h1 {
+    text-align: left;
+    padding-bottom: 0;
   }
 
-  #hero span {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+  #main h2 {
+    font-weight: 700;
+    font-size: 2em;
+  }
+
+  #main h3 {
+    font-size: 2em;
+  }
+
+  #main p {
+    font-size: 16px;
   }
 
   .logo {
-    display: block;
     min-width: 170px;
     float: left;
   }
 
   nav {
-    display: inline-block;
     width: 50%;
     float: right;
     text-align: right;
@@ -714,9 +818,91 @@ Large devices (1024px or larger)
     width: 100%;
   }
 
-  .photo {
-    display: block;
+  .col-lg-7 {
+    width: 50%;
+  }
+
+  .col-lg-5 {
+    width: 50%;
+    padding-top: 20px;
+  }
+
+  #about-page .col-lg-5 {
+    width: 50%;
+    padding-top: 0;
+  }
+
+  #main .container {
+    max-width: 1400px;
+    margin-left: auto;
     margin-right: auto;
+  }
+
+  .centertext {
+    width: 80%;
+  }
+}
+
+/* X-large devices (1280px or larger) - Desktop Styles */
+@media only screen and (min-width: 1280px) {
+  header {
+    text-align: unset;
+    height: 56px;
+    display: block;
+    position: fixed;
+  }
+
+  #hero h1 {
+    text-align: center;
+    font-weight: 700;
+    padding-left: 160px;
+    padding-right: 160px;
+    font-size: 3em;
+  }
+
+  #hero p {
+    padding-left: 280px;
+    padding-right: 280px;
+  }
+
+  #main h1 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-size: 2.5em;
+  }
+
+  #projects h1 {
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  #main h2 {
+    font-weight: 700;
+    font-size: 2em;
+  }
+
+  #main h3 {
+    font-size: 2em;
+  }
+
+  #main p {
+    font-size: 18px;
+  }
+
+  .logo {
+    min-width: 170px;
+    float: left;
+  }
+
+  nav {
+    width: 50%;
+    float: right;
+    text-align: right;
+  }
+
+  .berlin-illustration {
     width: 100%;
   }
 
@@ -726,11 +912,16 @@ Large devices (1024px or larger)
 
   .col-lg-5 {
     width: 50%;
+    padding-top: 20px;
   }
 
   #main .container {
-    display: grid;
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .centertext {
+    width: 80%;
   }
 }
