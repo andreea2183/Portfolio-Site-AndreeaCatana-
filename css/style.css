@@ -655,7 +655,7 @@ Medium devices (640px and larger)
 
   .photo {
     display: block;
-    width: 70%;
+    width: 60%;
   }
 
   .centertext {
@@ -747,11 +747,11 @@ Large devices (1024px or larger)
   .photo {
     display: block;
     margin-right: auto;
-    width: 70%;
+    width: 60%;
   }
 
   .centertext {
-    width: 80%;
+    width: 75%;
   }
 }
 
@@ -832,14 +832,14 @@ Large devices (1024px or larger)
     padding-top: 0;
   }
 
+  .centertext {
+    width: 95%;
+  }
+
   #main .container {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .centertext {
-    width: 80%;
   }
 }
 
@@ -855,14 +855,14 @@ Large devices (1024px or larger)
   #hero h1 {
     text-align: center;
     font-weight: 700;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 200px;
+    padding-right: 200px;
     font-size: 3em;
   }
 
   #hero p {
-    padding-left: 280px;
-    padding-right: 280px;
+    padding-left: 230px;
+    padding-right: 230px;
   }
 
   #main h1 {
@@ -870,7 +870,7 @@ Large devices (1024px or larger)
     padding-top: 30px;
     padding-bottom: 30px;
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
 
   #projects h1 {
@@ -922,6 +922,12 @@ Large devices (1024px or larger)
   }
 
   .centertext {
-    width: 80%;
+    width: 94%;
+  }
+
+  .photo {
+    display: block;
+    margin-right: auto;
+    width: 60%;
   }
 }
